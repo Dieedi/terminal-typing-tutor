@@ -1,0 +1,80 @@
+total_segments: 7
+
+segments:
+  0:
+    type: info
+    intro: |
+      Poe -- The Murders in the Rue Morgue (1841)
+    content: |
+      Often called the first modern detective story, Poe's
+      "The Murders in the Rue Morgue" introduces the brilliant
+      C. Auguste Dupin. When two women are brutally murdered in
+      a locked Paris apartment, Dupin applies extraordinary
+      analytical powers to unravel the impossible crime.
+  1:
+    type: drill
+    intro: |
+      Type the following passage carefully.
+    content: |
+      The mental features discoursed of as the analytical,
+      are, in themselves, but little susceptible of analysis.
+      We appreciate them only in their effects. We know of
+      them, among other things, that they are always to their
+      possessor, when inordinately possessed, a source of the
+      liveliest enjoyment.
+  2:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      As the strong man exults in his physical ability,
+      delighting in such exercises as call his muscles into
+      action, so glories the analyst in that moral activity
+      which disentangles. He derives pleasure from even the
+      most trivial occupations bringing his talent into play.
+  3:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      He is fond of enigmas, of conundrums, of hieroglyphics;
+      exhibiting in his solutions of each a degree of acumen
+      which appears to the ordinary apprehension
+      praeternatural. His results, brought about by the very
+      soul and essence of method, have, in truth, the whole
+      air of intuition.
+  4:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      The faculty of re-solution is possibly much invigorated
+      by mathematical study, and especially by that highest
+      branch of it which, unjustly, and merely on account of
+      its retrograde operations, has been called, as if par
+      excellence, analysis. Yet to calculate is not in itself
+      to analyse.
+  5:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      I am not now writing a treatise, but simply prefacing a
+      somewhat peculiar narrative by observations very much
+      at random; I will, therefore, take occasion to assert
+      that the higher powers of the reflective intellect are
+      more decidedly and more usefully tasked by the
+      unostentatious game of draughts than by all the
+      elaborate frivolity of chess.
+  6:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      Residing in Paris during the spring and part of the
+      summer of 18--, I there became acquainted with a
+      Monsieur C. Auguste Dupin. This young gentleman was of
+      an excellent, indeed of an illustrious family, but, by
+      a variety of untoward events, had been reduced to such
+      poverty that the energy of his character succumbed
+      beneath it.

@@ -1,0 +1,80 @@
+total_segments: 7
+
+segments:
+  0:
+    type: info
+    intro: |
+      Poe -- The Gold-Bug (1843)
+    content: |
+      Edgar Allan Poe's "The Gold-Bug" is a tale of mystery
+      and cryptography. The narrator joins his eccentric friend
+      Legrand on Sullivan's Island, where the discovery of a
+      golden beetle sets off a remarkable treasure hunt using
+      a secret cipher left by Captain Kidd.
+  1:
+    type: drill
+    intro: |
+      Type the following passage carefully.
+    content: |
+      Many years ago, I contracted an intimacy with a Mr.
+      William Legrand. He was of an ancient Huguenot family,
+      and had once been wealthy; but a series of misfortunes
+      had reduced him to want. To avoid the mortification
+      consequent upon his disasters, he left New Orleans, the
+      city of his forefathers, and took up his abode at
+      Sullivan's Island.
+  2:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      This Island is a very singular one. It consists of
+      little else than the sea sand, and is about three miles
+      long. Its breadth at no point exceeds a quarter of a
+      mile. It is separated from the main land by a scarcely
+      perceptible creek, oozing its way through a wilderness
+      of reeds and slime, a favorite resort of the marsh hen.
+  3:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      The vegetation, as might be supposed, is scant, or at
+      least dwarfish. No trees of any magnitude are to be
+      seen. Near the western extremity, where Fort Moultrie
+      stands, and where are some miserable frame buildings,
+      tenanted, during summer, by the fugitives from
+      Charleston dust and fever, may be found, indeed, the
+      bristly palmetto.
+  4:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      In the inmost recesses of this coppice, not far from
+      the eastern or more remote end of the island, Legrand
+      had built himself a small hut, which he occupied when I
+      first, by mere accident, made his acquaintance. This
+      soon ripened into friendship -- for there was much in
+      the recluse to excite interest and esteem.
+  5:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      The winters in the latitude of Sullivan's Island are
+      seldom very severe, and in the fall of the year it is a
+      rare event indeed when a fire is considered necessary.
+      About the middle of October, 18--, there occurred,
+      however, a day of remarkable chilliness.
+  6:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      Just before sunset I scrambled my way through the
+      evergreens to the hut of my friend, whom I had not
+      visited for several weeks -- my residence being, at
+      that time, in Charleston, a distance of nine miles from
+      the island, while the facilities of passage and re-
+      passage were very far behind those of the present day.

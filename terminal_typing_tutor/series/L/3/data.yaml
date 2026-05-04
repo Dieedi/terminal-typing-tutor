@@ -1,0 +1,81 @@
+total_segments: 7
+
+segments:
+  0:
+    type: info
+    intro: |
+      H.G. Wells -- The Time Machine (1895)
+    content: |
+      H.G. Wells's "The Time Machine" follows an inventor known
+      only as the Time Traveller who builds a machine capable of
+      travelling through time. After demonstrating the concept to
+      dinner guests, he journeys far into the future and discovers
+      a world transformed beyond recognition.
+  1:
+    type: drill
+    intro: |
+      Type the following passage carefully.
+    content: |
+      The Time Traveller (for so it will be convenient to
+      speak of him) was expounding a recondite matter to us.
+      His pale grey eyes shone and twinkled, and his usually
+      pale face was flushed and animated. The fire burnt
+      brightly, and the soft radiance of the incandescent
+      lights caught the bubbles that flashed and passed in
+      our glasses.
+  2:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      "You must follow me carefully. I shall have to
+      controvert one or two ideas that are almost universally
+      accepted. The geometry, for instance, they taught you
+      at school is founded on a misconception." "Is not that
+      rather a large thing to expect us to begin upon?" said
+      Filby, an argumentative person with red hair.
+  3:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      "I do not mean to ask you to accept anything without
+      reasonable ground for it. You will soon admit as much
+      as I need from you. You know of course that a
+      mathematical line, a line of thickness nil, has no
+      real existence. They taught you that? Neither has a
+      mathematical plane. These things are mere
+      abstractions."
+  4:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      "Nor, having only length, breadth, and thickness, can a
+      cube have a real existence." "There I object," said
+      Filby. "Of course a solid body may exist. All real
+      things--" "So most people think. But wait a moment.
+      Can an instantaneous cube exist?" "Don't follow you,"
+      said Filby.
+  5:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      Filby became pensive. "Clearly," the Time Traveller
+      proceeded, "any real body must have extension in four
+      directions: it must have Length, Breadth, Thickness,
+      and -- Duration. But through a natural infirmity of the
+      flesh, which I will explain to you in a moment, we
+      incline to overlook this fact."
+  6:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      There are really four dimensions, three which we call
+      the three planes of Space, and a fourth, Time. There
+      is, however, a tendency to draw an unreal distinction
+      between the former three dimensions and the latter,
+      because it happens that our consciousness moves
+      intermittently in one direction along the latter.

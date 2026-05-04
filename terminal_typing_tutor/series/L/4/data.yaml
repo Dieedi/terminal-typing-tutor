@@ -1,0 +1,79 @@
+total_segments: 7
+
+segments:
+  0:
+    type: info
+    intro: |
+      H.G. Wells -- The War of the Worlds (1898)
+    content: |
+      H.G. Wells's "The War of the Worlds" is a landmark
+      science fiction novel. Martians launch an invasion of
+      Earth, their advanced technology overwhelming human
+      defenses. Narrated by an unnamed survivor, the story
+      explores themes of imperialism, evolution, and human
+      vulnerability.
+  1:
+    type: drill
+    intro: |
+      Type the following passage carefully.
+    content: |
+      No one would have believed in the last years of the
+      nineteenth century that this world was being watched
+      keenly and closely by intelligences greater than man's
+      and yet as mortal as his own; that as men busied
+      themselves about their various concerns they were
+      scrutinised and studied.
+  2:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      With infinite complacency men went to and fro over
+      this globe about their little affairs, serene in their
+      assurance of their empire over matter. It is curious
+      to recall some of the mental habits of those departed
+      days. At most terrestrial men fancied there might be
+      other men upon Mars, perhaps inferior to themselves.
+  3:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      Yet across the gulf of space, minds that are to our
+      minds as ours are to those of the beasts that perish,
+      intellects vast and cool and unsympathetic, regarded
+      this earth with envious eyes, and slowly and surely
+      drew their plans against us. And early in the
+      twentieth century came the great disillusionment.
+  4:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      The planet Mars, I scarcely need remind the reader,
+      revolves about the sun at a mean distance of
+      140,000,000 miles, and the light and heat it receives
+      from the sun is barely half of that received by this
+      world. It must be, if the nebular hypothesis has any
+      truth, older than our world.
+  5:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      Yet so vain is man, and so blinded by his vanity,
+      that no writer, up to the very end of the nineteenth
+      century, expressed any idea that intelligent life
+      might have developed there far, or indeed at all,
+      beyond its earthly level.
+  6:
+    type: drill
+    intro: |
+      Continue the passage.
+    content: |
+      The secular cooling that must someday overtake our
+      planet has already gone far indeed with our neighbour.
+      Its physical condition is still largely a mystery,
+      but we know now that even in its equatorial region
+      the midday temperature barely approaches that of our
+      coldest winter.
