@@ -1,0 +1,47 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E7 - Verbos en presente (Verbes au présent)
+    content: |
+      Les verbes réguliers espagnols au présent :
+
+      3 terminaisons : -AR, -ER, -IR
+
+      HABLAR (parler) — verbe en -AR :
+        yo hablo      nosotros hablamos
+        tú hablas     vosotros habláis
+        él/ella habla ellos/ellas hablan
+
+      COMER (manger) — verbe en -ER :
+        yo como       nosotros comemos
+        tú comes      vosotros coméis
+        él/ella come  ellos/ellas comen
+
+      VIVIR (vivre) — verbe en -IR :
+        yo vivo       nosotros vivimos
+        tú vives      vosotros vivís
+        él/ella vive  ellos/ellas viven
+  1:
+    type: drill
+    intro: |
+      Tapez les conjugaisons des trois verbes modèles.
+    content: |
+      hablar: yo hablo, tú hablas, él habla,
+      nosotros hablamos, vosotros habláis, ellos hablan.
+      comer: yo como, tú comes, él come,
+      nosotros comemos, vosotros coméis, ellos comen.
+      vivir: yo vivo, tú vives, él vive,
+      nosotros vivimos, vosotros vivís, ellos viven.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases avec des verbes courants.
+    content: |
+      Yo hablo español y mi amigo habla un poco francés.
+      Ella come en un restaurante todos los días hábiles.
+      Nosotros vivimos en Madrid desde hace ya dos años.
+      Él trabaja en una oficina grande del centro ciudad.
+      Vosotros bebéis agua con gas en las comidas siempre.

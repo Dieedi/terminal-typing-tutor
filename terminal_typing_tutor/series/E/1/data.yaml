@@ -1,0 +1,39 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E1 - Saludos y cortesía (Salutations)
+    content: |
+      Bienvenue dans la série Español !
+      Chaque leçon combine vocabulaire espagnol
+      et entraînement au touch typing.
+
+      Vocabulaire de cette leçon :
+      Hola / Adiós — Bonjour / Au revoir
+      Buenos días / Buenas tardes / Buenas noches
+      Por favor — S'il vous plaît
+      Gracias / De nada — Merci / De rien
+      Disculpe / Lo siento — Excusez-moi / Désolé
+      Mucho gusto — Enchanté
+      Hasta luego / Hasta mañana — À bientôt / À demain
+  1:
+    type: drill
+    intro: |
+      Tapez les salutations essentielles en espagnol.
+    content: |
+      hola, buenos días, buenas tardes, buenas noches,
+      adiós, hasta luego, hasta la vista, hasta mañana,
+      por favor, gracias, de nada, disculpe, lo siento,
+      con permiso, mucho gusto, igualmente, bienvenido.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases de politesse courantes.
+    content: |
+      Buenos días, me llamo Carlos. ¿Cómo te llamas?
+      Mucho gusto, María. Encantado de conocerte.
+      Hasta luego y hasta mañana, amigo. ¡Cuánto tiempo!
+      Lo siento, no entiendo bien. ¿Hablas inglés aquí?
+      Por favor, ¿puede repetir más despacio? Gracias.

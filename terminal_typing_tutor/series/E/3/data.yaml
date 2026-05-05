@@ -1,0 +1,43 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E3 - La familia (La famille)
+    content: |
+      La famille en espagnol :
+
+      madre / mamá   — mère / maman
+      padre / papá   — père / papa
+      hijo / hija    — fils / fille
+      hermano/a      — frère / sœur
+      abuelo/a       — grand-père / grand-mère
+      tío / tía      — oncle / tante
+      primo / prima  — cousin / cousine
+      esposo/a       — mari / femme
+      suegro/a       — beau-père / belle-mère
+      yerno / nuera  — gendre / bru
+      nieto / nieta  — petit-fils / petite-fille
+      sobrino/a      — neveu / nièce
+      padrino/madrina — parrain / marraine
+  1:
+    type: drill
+    intro: |
+      Tapez le vocabulaire de la famille.
+    content: |
+      madre, padre, hijo, hija, hermano, hermana,
+      abuelo, abuela, tío, tía, primo, prima,
+      esposo, esposa, suegro, suegra, yerno, nuera,
+      nieto, nieta, bisabuelo, bisabuela, sobrino,
+      sobrina, padrino, madrina, ahijado, familia.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases sur la famille.
+    content: |
+      Mi madre se llama Ana y mi padre se llama Juan.
+      Tengo dos hermanos mayores y una hermana menor.
+      Mi abuelo tiene setenta y cinco años de edad.
+      Los primos vienen a visitarnos el domingo próximo.
+      Mi esposa trabaja como médico en el hospital.

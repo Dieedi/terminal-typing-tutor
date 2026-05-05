@@ -1,0 +1,42 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E6 - Comida y bebidas (Nourriture et boissons)
+    content: |
+      La nourriture et les boissons en espagnol :
+
+      pan    — pain      leche — lait     agua  — eau
+      carne  — viande    pollo — poulet   pescado — poisson
+      arroz  — riz       pasta — pâtes    huevo — œuf
+      queso  — fromage   fruta — fruit    verdura — légume
+      tomate — tomate    cebolla — oignon  ajo — ail
+      patata — pomme de terre  zanahoria — carotte
+      manzana — pomme    naranja — orange  fresa — fraise
+
+      Boissons :
+      café  — café       té  — thé
+      vino  — vin        cerveza — bière
+      zumo  — jus        agua con gas — eau gazeuse
+  1:
+    type: drill
+    intro: |
+      Tapez le vocabulaire de la nourriture.
+    content: |
+      pan, leche, agua, carne, pescado, fruta,
+      verdura, arroz, pasta, queso, huevo, pollo,
+      tomate, cebolla, ajo, patata, zanahoria,
+      manzana, naranja, plátano, fresa, uva,
+      café, té, vino, cerveza, zumo, chocolate.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases pour commander au restaurant.
+    content: |
+      Quiero un café con leche y un cruasán, por favor.
+      Me pone una cerveza fría y unas tapas, gracias.
+      La sopa del día es de tomate con trozos de pan.
+      Para cenar quiero pollo con arroz y verduras.
+      De postre tomaré fresas frescas con nata montada.

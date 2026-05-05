@@ -1,0 +1,44 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E2 - Los números (Les nombres)
+    content: |
+      Les nombres en espagnol :
+
+      1  uno      11 once        21 veintiuno
+      2  dos      12 doce        30 treinta
+      3  tres     13 trece       40 cuarenta
+      4  cuatro   14 catorce     50 cincuenta
+      5  cinco    15 quince      60 sesenta
+      6  seis     16 dieciséis   70 setenta
+      7  siete    17 diecisiete  80 ochenta
+      8  ocho     18 dieciocho   90 noventa
+      9  nueve    19 diecinueve 100 cien
+      10 diez     20 veinte    1000 mil
+
+      Astuce : vingt et un = veintiuno (tout attaché),
+      trente et un = treinta y uno (avec "y").
+  1:
+    type: drill
+    intro: |
+      Tapez les nombres de 1 à 100 et au-delà.
+    content: |
+      uno, dos, tres, cuatro, cinco, seis, siete,
+      ocho, nueve, diez, once, doce, trece, catorce,
+      quince, dieciséis, diecisiete, dieciocho,
+      diecinueve, veinte, treinta, cuarenta,
+      cincuenta, sesenta, setenta, ochenta,
+      noventa, cien, doscientos, mil, un millón.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases avec des nombres.
+    content: |
+      Tengo veinticinco años. Vivo en el piso tres.
+      El autobús número cuatro sale a las ocho horas.
+      La tienda abre a las nueve de la mañana exacta.
+      El precio es veinte euros con cincuenta céntimos.
+      Hay cien personas esperando en la plaza central.

@@ -1,0 +1,46 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E8 - Refranes españoles (Proverbes espagnols)
+    content: |
+      Les proverbes sont un excellent moyen d'apprendre
+      une langue tout en découvrant sa culture.
+      Voici les proverbes de cette leçon traduits :
+
+      "No hay mal que por bien no venga."
+       → À quelque chose malheur est bon.
+
+      "Camarón que se duerme, se lo lleva la corriente."
+       → L'écrevisse qui dort est emportée par le courant.
+
+      "A mal tiempo, buena cara."
+       → Faire bonne figure par mauvais temps.
+
+      "Dime con quién andas y te diré quién eres."
+       → Dis-moi qui tu fréquentes et je te dirai qui tu es.
+
+      "Más vale tarde que nunca."
+       → Mieux vaut tard que jamais.
+  1:
+    type: drill
+    intro: |
+      Tapez ces proverbes espagnols célèbres.
+    content: |
+      No hay mal que por bien no venga. El tiempo es oro.
+      Camarón que se duerme se lo lleva la corriente.
+      A mal tiempo, buena cara. Querer es poder siempre.
+      Dime con quién andas y te diré quién eres hoy.
+      Más vale tarde que nunca llegar a su destino.
+  2:
+    type: drill
+    intro: |
+      Tapez ces autres proverbes espagnols.
+    content: |
+      En boca cerrada no entran moscas nunca jamás.
+      Donde hay ganas hay mañas para lograr el éxito.
+      Al que madruga Dios le ayuda a lo largo del día.
+      Más vale prevenir que tener que lamentar el daño.
+      No dejes para mañana lo que puedas hacer bien hoy.

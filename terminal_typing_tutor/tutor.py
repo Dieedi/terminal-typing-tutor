@@ -1,4 +1,4 @@
-from typing import List, Literal, cast
+from typing import List, Literal, Union, cast
 from pathlib import Path
 from datetime import date
 from blessed.keyboard import Keystroke
@@ -64,7 +64,7 @@ def get_key():
         return key
 
 
-def file_content(file: Path, parse: Literal["yaml", "json", "text"] = "text") -> str | TStatsFile:
+def file_content(file: Path, parse: Literal["yaml", "json", "text"] = "text") -> Union[str, TStatsFile]:
     with open(file, "r") as f:
         if parse == "yaml":
             return yaml.unsafe_load(f)

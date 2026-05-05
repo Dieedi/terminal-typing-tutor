@@ -1,0 +1,42 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E4 - Los colores (Les couleurs)
+    content: |
+      Les couleurs en espagnol :
+
+      rojo      — rouge       morado  — violet
+      azul      — bleu        rosa    — rose
+      verde     — vert        gris    — gris
+      amarillo  — jaune       marrón  — marron
+      blanco    — blanc       beige   — beige
+      negro     — noir        dorado  — doré
+      naranja   — orange      plateado — argenté
+      turquesa  — turquoise   celeste — bleu ciel
+
+      En espagnol, les adjectifs s'accordent en genre :
+      "el coche rojo" mais "la casa roja".
+      "un gato negro" mais "una gata negra".
+  1:
+    type: drill
+    intro: |
+      Tapez les couleurs en espagnol.
+    content: |
+      rojo, azul, verde, amarillo, blanco, negro,
+      naranja, morado, rosa, gris, marrón, beige,
+      violeta, turquesa, plateado, dorado, café,
+      celeste, carmesí, escarlata, índigo, crema,
+      transparente, brillante, oscuro, claro, vivo.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases avec les couleurs.
+    content: |
+      El cielo es azul y el sol brilla amarillo.
+      Las rosas rojas son hermosas y muy fragantes.
+      La casa blanca tiene una puerta de color verde.
+      El gato negro duerme sobre la mesa de marrón.
+      Me gustan mucho los colores vivos y brillantes.

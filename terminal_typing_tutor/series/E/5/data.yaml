@@ -1,0 +1,43 @@
+total_segments: 3
+
+segments:
+  0:
+    type: info
+    intro: |
+      E5 - La casa (La maison)
+    content: |
+      Les pièces et le mobilier en espagnol :
+
+      Pièces :
+      sala / salón  — salon         cocina  — cuisine
+      dormitorio    — chambre       baño    — salle de bain
+      comedor       — salle à manger  jardín — jardin
+      garaje        — garage        pasillo — couloir
+      terraza       — terrasse      sótano  — sous-sol
+
+      Mobilier :
+      cama   — lit        mesa   — table
+      silla  — chaise     sofá   — canapé
+      armario — armoire   nevera — réfrigérateur
+      horno  — four       ducha  — douche
+      espejo — miroir     lámpara — lampe
+  1:
+    type: drill
+    intro: |
+      Tapez le vocabulaire de la maison.
+    content: |
+      sala, cocina, dormitorio, baño, jardín,
+      garaje, comedor, pasillo, terraza, sótano,
+      cama, mesa, silla, sofá, lámpara, espejo,
+      armario, nevera, horno, ducha, lavabo,
+      ventana, puerta, suelo, techo, pared, alfombra.
+  2:
+    type: drill
+    intro: |
+      Tapez ces phrases sur la maison.
+    content: |
+      La sala es grande y tiene un sofá muy cómodo.
+      En la cocina hay una mesa con cuatro sillas.
+      El dormitorio tiene una cama doble y un armario.
+      El baño tiene ducha nueva y una lavadora moderna.
+      El jardín tiene flores rojas y árboles muy altos.
