@@ -374,11 +374,8 @@ def run_drill(title: str, intro: str, content: str):
                     chars = len(correct_pressed_keys)
                     wrong = len(incorrect_pressed_keys)
                     if (chars - wrong) / chars * 100 < 97.0:
-                        with TERM.location():
-                            print(HOME + XY(0, HEIGHT), end="", flush=True)
-                            print(TERM.black_on_red(" Accuracy < 97% — restarting... "), end="", flush=True)
-                        time.sleep(1.0)
-                        return "repeat"
+                        action = end_drill(start_time, test_string[:chars], incorrect_pressed_keys)
+                        return action
             # if they did not hit target, we want to set True
             pressed_wrong_key = True
 
