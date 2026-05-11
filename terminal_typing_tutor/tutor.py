@@ -374,7 +374,7 @@ def run_drill(title: str, intro: str, content: str):
             # if user mistypes A, we only want to track it first time, do not penalize for missing same character twice
             if not pressed_wrong_key:
                 incorrect_pressed_keys.append(key)
-                if strict_mode and correct_pressed_keys:
+                if strict_mode and len(correct_pressed_keys) >= 34:
                     chars = len(correct_pressed_keys)
                     wrong = len(incorrect_pressed_keys) - wrong_at_start
                     if max(0, chars - wrong) / chars * 100 < 97.0:
