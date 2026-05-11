@@ -1,0 +1,60 @@
+total_segments: 6
+
+segments:
+  0:
+    type: info
+    intro: |
+      Long Words (8+ letters)
+    content: |
+      Practice longer words (8 letters or more). These challenge your finger memory.
+      Each drill is freshly randomised from 10,000 common English words.
+  1:
+    type: drill
+    intro: |
+      Random words (1/5) - type accurately!
+    content: |
+      roulette infrared properly calculation suggests
+      bargains classification february machinery programmers
+      coverage sentences cordless spending representations
+      northeast regression singapore cigarette proteins
+      creative templates problems japanese associate
+  2:
+    type: drill
+    intro: |
+      Random words (2/5) - type accurately!
+    content: |
+      nominations comparing examinations beautiful depending
+      municipal invitations excluded emotional economies
+      shepherd holdings radiation unemployment adventure
+      customise duplicate voyeurweb architects compensation
+      cigarettes designation dangerous millions queensland
+  3:
+    type: drill
+    intro: |
+      Random words (3/5) - type accurately!
+    content: |
+      sterling robinson scanners emirates regarding societies
+      organization institution medieval warranties interest
+      recommendation relevance petition generators yugoslavia
+      receivers previously algorithms fascinating enhancing
+      brooklyn neighbor everybody component approved
+  4:
+    type: drill
+    intro: |
+      Random words (4/5) - type accurately!
+    content: |
+      creature employers colleagues porcelain alliance
+      invitations underlying contractor automation terrible
+      carefully inspections programme religion conversation
+      potential tradition trademark analyses optimization
+      remained spreading infectious batteries atlantic
+  5:
+    type: drill
+    intro: |
+      Random words (5/5) - type accurately!
+    content: |
+      molecular matching statistical paradise provincial
+      promising significance analyses perceived netherlands
+      netscape withdrawal holdings competitive victoria
+      proceeding specifically richardson waterproof
+      necessarily released judgment brisbane induction

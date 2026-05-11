@@ -1,0 +1,60 @@
+total_segments: 6
+
+segments:
+  0:
+    type: info
+    intro: |
+      Mixed Words (all lengths)
+    content: |
+      A full mix of short, medium, and long words.
+      Each drill is freshly randomised from 10,000 common English words.
+  1:
+    type: drill
+    intro: |
+      Random words (1/5) - type accurately!
+    content: |
+      downloaded thesis petersburg ana height common lolita
+      missile tubes transcripts pocket cosmetic louisiana
+      night knight trackbacks warned manuals relating bra
+      proceed islands trunk wicked always resolutions trout
+      minute percent spam usually invalid sacred residents
+  2:
+    type: drill
+    intro: |
+      Random words (2/5) - type accurately!
+    content: |
+      whereas sheep self destroyed scroll inf sudden payable
+      tour eligibility arg transfer transexuales alias nelson
+      civilian volkswagen although chambers transactions
+      opportunity vocals procedure surfaces comment antibody
+      genes wagon plenty wound organized definitely
+  3:
+    type: drill
+    intro: |
+      Random words (3/5) - type accurately!
+    content: |
+      boot portions debate fix processed implications
+      findings witch per fans joining hobbies removal
+      homepage counter cuisine rec preferences creates nato
+      economy default straight pan award arcade den estates
+      color paraguay clock dell optical organisation everyone
+  4:
+    type: drill
+    intro: |
+      Random words (4/5) - type accurately!
+    content: |
+      fifteen ocean pointed molecular broker selecting nurses
+      posing blessed pharmaceuticals forge walking lake
+      credits cell species reproductive motion belkin
+      introduction assistance poster establishing clay
+      informative never accompanied cultural washing young
+  5:
+    type: drill
+    intro: |
+      Random words (5/5) - type accurately!
+    content: |
+      privacy hunter prohibited bodies romantic indicator
+      loves occupational comics business rolling workplace
+      assistance upskirt deal divine indiana arrangements
+      estate attitudes brake concentration utility welfare
+      cardiovascular hills texas scanner earth compliant

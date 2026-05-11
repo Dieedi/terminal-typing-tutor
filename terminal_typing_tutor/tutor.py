@@ -4,6 +4,7 @@ from datetime import date
 from blessed.keyboard import Keystroke
 from urllib import request
 from .qotd import *
+from .words import words_short, words_medium, words_long, words_mixed
 import yaml
 import json
 import time
@@ -384,6 +385,17 @@ def run_lesson_menu():
             rand_quote()
         elif lesson == 3:
             edison()
+
+    # initialize random word drills
+    if series == 'F':
+        if lesson == 1:
+            words_short()
+        elif lesson == 2:
+            words_medium()
+        elif lesson == 3:
+            words_long()
+        elif lesson == 4:
+            words_mixed()
 
 
 def run_series_menu():

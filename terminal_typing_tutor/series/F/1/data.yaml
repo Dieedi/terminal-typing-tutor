@@ -1,0 +1,60 @@
+total_segments: 6
+
+segments:
+  0:
+    type: info
+    intro: |
+      Short Words (3-4 letters)
+    content: |
+      Practice short common words. Focus on rhythm and accuracy.
+      Each drill is freshly randomised from 10,000 common English words.
+  1:
+    type: drill
+    intro: |
+      Random words (1/5) - type accurately!
+    content: |
+      net put gary too oral paso foul fed frog goat cruz raid
+      wife body sat dell ste bool page pee hub andy ripe vii
+      nova acts kept uses let area bra sin hide tin boc hero
+      fund biol trap rel age juan egg ups joan ipod kid var
+      went apr doug fees seem dom lets barn cube love tied
+  2:
+    type: drill
+    intro: |
+      Random words (2/5) - type accurately!
+    content: |
+      sie dogs fell nos swim case nuts give sick mil mood
+      exec per holy amy ncaa bid lead army caps oral pics
+      core inc salt fall expo ohio whom adam beer mad born
+      egg col duck days asn joke toe cam greg mali east thee
+      ist solo ride jury live guy scsi fish bow band sao bed
+  3:
+    type: drill
+    intro: |
+      Random words (3/5) - type accurately!
+    content: |
+      rug run drag oils lace quad incl onto exp show casa
+      jane died oclc bulk keen ice rick bin car sofa stay
+      bean hong sur neo step carb kind jury dana oral sat
+      asin seen bid sin kurt file slim diet kong guru lite
+      alot met dam barn born seek weak ict laid soul cad cafe
+  4:
+    type: drill
+    intro: |
+      Random words (4/5) - type accurately!
+    content: |
+      usa disc maps hour hack golf tom dow jury def ment town
+      dark form fur usr door wish wire bang ken pic ten dust
+      rays bike chem old foo dir usd urw suse met clip were
+      jeff isbn worm horn jean mens lee ward amp use cape
+      toys hit pens rico tank wave tee par soma sic fast dawn
+  5:
+    type: drill
+    intro: |
+      Random words (5/5) - type accurately!
+    content: |
+      cash lou make sim nano solo vary ist sum wet lap jane
+      mrna pray died gang kong cap slim yarn asia comp abs
+      boat add midi corp hong does hear grad cape beta utc
+      jet pic iraq beth goal lil bow food mom ear fla talk
+      low dell ice fan arc ill eau mere ala peak one saw ent

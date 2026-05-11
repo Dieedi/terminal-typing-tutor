@@ -1,0 +1,60 @@
+total_segments: 6
+
+segments:
+  0:
+    type: info
+    intro: |
+      Medium Words (5-7 letters)
+    content: |
+      Practice medium-length words (5 to 7 letters).
+      Each drill is freshly randomised from 10,000 common English words.
+  1:
+    type: drill
+    intro: |
+      Random words (1/5) - type accurately!
+    content: |
+      parish firefox estates arrives gregory auction gained
+      vintage easier elderly mental abroad spoke greene
+      attract notify country should joshua czech floral
+      patents employ camping grades munich before jesus
+      concord giants large alabama brief expense craft skills
+  2:
+    type: drill
+    intro: |
+      Random words (2/5) - type accurately!
+    content: |
+      wheat bigger rooms regular nascar vocal april villas
+      bubble naked pioneer biggest website excerpt vessels
+      pockets great janet ralph boots perhaps noble angeles
+      early steam obesity michel concert supply nasty advance
+      herself harvest serve floral polymer drove years
+  3:
+    type: drill
+    intro: |
+      Random words (3/5) - type accurately!
+    content: |
+      drama deposit kenny aimed adidas makes frames looking
+      relief spoken favor jones click finds draft theory
+      saver sensors council double civil hosting hughes
+      defeat arnold chains cargo breath million clouds owners
+      forums attacks grade deliver abuse inquire plaza
+  4:
+    type: drill
+    intro: |
+      Random words (4/5) - type accurately!
+    content: |
+      staff canvas heather acids waste brought project
+      joining cents support through cities upper farmer pound
+      allah herself stars nigeria coupon hudson modify checks
+      pushing contact favors assault killing probe named
+      figures yamaha wyoming breeds shirts livesex cement
+  5:
+    type: drill
+    intro: |
+      Random words (5/5) - type accurately!
+    content: |
+      tracked perfume kenneth merit locally adidas tower
+      average series works years hunger result tulsa files
+      mumbai applied guild scenic divorce tracy intent scuba
+      packed menus welfare fuzzy killing junior books spent
+      failing milan months adaptor private index lloyd ticket

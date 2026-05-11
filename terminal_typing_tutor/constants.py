@@ -47,6 +47,10 @@ MAIN_MENU = [
     {
         "title": "Series E    Espanol - Apprendre l'espagnol   ",
         "series": "E",
+    },
+    {
+        "title": "Series F    Random word drills (10k words)   ",
+        "series": "F",
     }
 ]
 
@@ -79,4 +83,4 @@ PB_DICT = {
 
 TStats = TypedDict("Tstats", {"accuracy": float, "wpm": int, "cpm": int, "words": int, "characters": int}) 
 TStatsFile = TypedDict("TStatsFile", {"all_time": TStats}) 
-TSeries = Literal["M", "Q", "R", "S", "T", "U", "V", "W", "D", "L", "E"]
+TSeries = Literal["M", "Q", "R", "S", "T", "U", "V", "W", "D", "L", "E", "F"]
