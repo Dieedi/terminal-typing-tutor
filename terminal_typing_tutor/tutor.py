@@ -252,22 +252,50 @@ def print_lines(content_str: str) -> int:
 
 def run_drill(title: str, intro: str, content: str):
     drill_started = False
+    show_stats = True
     pressed_wrong_key = False
     start_time = 0.0
     test_string = content.rstrip()
+    correct_pressed_keys: List[str] = []
+    incorrect_pressed_keys: List[str] = []
+
+    def draw_bottom_bar():
+        toggle_label = "F1: hide" if show_stats else "F1: show"
+        left_text = f" TAB: restart  {toggle_label} "
+        right_text = "   Drill   "
+
+        stats_text = ""
+        stats_colored = ""
+        if show_stats and drill_started and correct_pressed_keys:
+            elapsed = time.time() - start_time
+            chars = len(correct_pressed_keys)
+            wrong = len(incorrect_pressed_keys)
+            if elapsed > 0:
+                wpm = round((chars / 5) / (elapsed / 60))
+                acc = round((chars - wrong) / chars * 100, 1)
+                stats_text = f" {wpm} WPM  {acc}% "
+                stats_colored = TERM.cyan_on_black(stats_text)
+
+        middle_width = WIDTH - len(left_text) - len(right_text)
+        padding = max(0, middle_width - len(stats_text))
+        left_pad = " " * (padding // 2)
+        right_pad = " " * (padding - padding // 2)
+
+        with TERM.location():
+            print(HOME + XY(0, HEIGHT), end="", flush=True)
+            print(
+                TERM.black_on_white(left_text) +
+                left_pad + stats_colored + right_pad +
+                TERM.black_on_white(right_text),
+                end="", flush=True,
+            )
+
     print(HOME + CLEAR, end="", flush=True)
-    with TERM.location():
-        print(HOME + XY(0, HEIGHT), end="", flush=True)
-        hint = " TAB: restart "
-        info_str = "   Drill   "
-        print(TERM.black_on_white(hint) + RIGHT(WIDTH - len(info_str) - len(hint)) + TERM.black_on_white(info_str), end="", flush=True)
+    draw_bottom_bar()
     print(TERM.black_on_cyan(CENTER(title)) + DOWN(1))
-    # print(TERM.white(CENTER(intro)) + DOWN(2))
     print_lines(intro)
     print(DOWN(2))
     left_padding = print_lines(test_string)
-    correct_pressed_keys = []
-    incorrect_pressed_keys = []
 
     while True:
         # first check to see if all characters typed, end drill
@@ -285,6 +313,11 @@ def run_drill(title: str, intro: str, content: str):
         if key.name == "KEY_TAB":
             return "repeat"
 
+        if key.name == "KEY_F1":
+            show_stats = not show_stats
+            draw_bottom_bar()
+            continue
+
         if key.name == "KEY_ESCAPE":
             # start test over if in middle of test, else confirm exit
             if drill_started:
@@ -296,19 +329,19 @@ def run_drill(title: str, intro: str, content: str):
         pressed_key = pressed_info(key, target_character)
 
         # Set the start time on first key press
-        if drill_started == False:
+        if not drill_started:
             start_time = time.time()
             drill_started = True
 
         if pressed_key["hit_target"]:
-            if pressed_wrong_key == False:
+            if not pressed_wrong_key:
                 if pressed_key["pressed_enter"]:
                     print(f" \n{X(left_padding)}", end="", flush=True)
                 else:
                     # changed correct key to gray (red/green colorblind friendly)
                     print(TERM.gray(key), end="", flush=True)
 
-            if pressed_wrong_key == True:
+            if pressed_wrong_key:
                 if pressed_key["pressed_space"]:
                     print(TERM.red_on_red("x"), end="", flush=True)
                 elif pressed_key["pressed_enter"]:
@@ -322,10 +355,12 @@ def run_drill(title: str, intro: str, content: str):
 
         else:
             # if user mistypes A, we only want to track it first time, do not penalize for missing same character twice
-            if pressed_wrong_key == False:
+            if not pressed_wrong_key:
                 incorrect_pressed_keys.append(key)
             # if they did not hit target, we want to set True
             pressed_wrong_key = True
+
+        draw_bottom_bar()
 
 
 def display_menu_screen(menu_title: str, selection, menu):
