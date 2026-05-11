@@ -171,7 +171,7 @@ def end_drill(start_time: float, test_string: str, incorrect_pressed_keys: List[
         words_string = f" {TERM.cyan_on_black(str(current_words)) + TERM.white_on_black( ' Words Typed ')}"
         if current_acc < 97.00:
             failed_drill = True
-            end_msg = " Accuracy not high enough, must hit at least 97% "
+            end_msg = " Accuracy not high enough (< 97%) — press ENTER, SPACE or ESC to retry "
         else:
             pbs = track_pb()
             if pbs["new_wpm"]:
