@@ -258,8 +258,9 @@ def run_drill(title: str, intro: str, content: str):
     print(HOME + CLEAR, end="", flush=True)
     with TERM.location():
         print(HOME + XY(0, HEIGHT), end="", flush=True)
+        hint = " TAB: restart "
         info_str = "   Drill   "
-        print(RIGHT(WIDTH - (len(info_str))) + TERM.black_on_white(info_str), end="", flush=True)
+        print(TERM.black_on_white(hint) + RIGHT(WIDTH - len(info_str) - len(hint)) + TERM.black_on_white(info_str), end="", flush=True)
     print(TERM.black_on_cyan(CENTER(title)) + DOWN(1))
     # print(TERM.white(CENTER(intro)) + DOWN(2))
     print_lines(intro)
@@ -280,6 +281,9 @@ def run_drill(title: str, intro: str, content: str):
         else:
             print(f"{TERM.black_on_white(target_character)}{LEFT(1)}", end="", flush=True)
         key = get_key()
+
+        if key.name == "KEY_TAB":
+            return "repeat"
 
         if key.name == "KEY_ESCAPE":
             # start test over if in middle of test, else confirm exit
