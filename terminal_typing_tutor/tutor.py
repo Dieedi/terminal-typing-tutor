@@ -261,6 +261,7 @@ def run_drill(title: str, intro: str, content: str):
     strict_mode = setting_strict_mode
     pressed_wrong_key = False
     start_time = 0.0
+    wrong_at_start = 0  # errors made before first correct char — excluded from accuracy
     test_string = content.rstrip()
     correct_pressed_keys: List[str] = []
     incorrect_pressed_keys: List[str] = []
@@ -276,10 +277,10 @@ def run_drill(title: str, intro: str, content: str):
         if show_stats and drill_started and correct_pressed_keys:
             elapsed = time.time() - start_time
             chars = len(correct_pressed_keys)
-            wrong = len(incorrect_pressed_keys)
+            wrong = len(incorrect_pressed_keys) - wrong_at_start
             if elapsed > 0:
                 wpm = round((chars / 5) / (elapsed / 60))
-                acc = round((chars - wrong) / chars * 100, 1)
+                acc = round(max(0, chars - wrong) / chars * 100, 1)
                 stats_text = f" {wpm} WPM  {acc}% "
                 stats_colored = TERM.cyan_on_black(stats_text)
 
@@ -364,6 +365,8 @@ def run_drill(title: str, intro: str, content: str):
                 else:
                     print(TERM.red(key), end="", flush=True)
 
+            if not correct_pressed_keys:
+                wrong_at_start = len(incorrect_pressed_keys)
             correct_pressed_keys.append(key)
             pressed_wrong_key = False
 
@@ -373,9 +376,9 @@ def run_drill(title: str, intro: str, content: str):
                 incorrect_pressed_keys.append(key)
                 if strict_mode and correct_pressed_keys:
                     chars = len(correct_pressed_keys)
-                    wrong = len(incorrect_pressed_keys)
-                    if (chars - wrong) / chars * 100 < 97.0:
-                        action = end_drill(start_time, test_string[:chars], incorrect_pressed_keys)
+                    wrong = len(incorrect_pressed_keys) - wrong_at_start
+                    if max(0, chars - wrong) / chars * 100 < 97.0:
+                        action = end_drill(start_time, test_string[:chars], incorrect_pressed_keys[wrong_at_start:])
                         return action
             # if they did not hit target, we want to set True
             pressed_wrong_key = True
