@@ -253,6 +253,7 @@ def print_lines(content_str: str) -> int:
 def run_drill(title: str, intro: str, content: str):
     drill_started = False
     show_stats = True
+    strict_mode = False
     pressed_wrong_key = False
     start_time = 0.0
     test_string = content.rstrip()
@@ -261,7 +262,8 @@ def run_drill(title: str, intro: str, content: str):
 
     def draw_bottom_bar():
         toggle_label = "F1: hide" if show_stats else "F1: show"
-        left_text = f" TAB: restart  {toggle_label} "
+        strict_label = "F2: strict:ON" if strict_mode else "F2: strict"
+        left_text = f" TAB: restart  {toggle_label}  {strict_label} "
         right_text = "   Drill   "
 
         stats_text = ""
@@ -318,6 +320,11 @@ def run_drill(title: str, intro: str, content: str):
             draw_bottom_bar()
             continue
 
+        if key.name == "KEY_F2":
+            strict_mode = not strict_mode
+            draw_bottom_bar()
+            continue
+
         if key.name == "KEY_ESCAPE":
             # start test over if in middle of test, else confirm exit
             if drill_started:
@@ -357,6 +364,15 @@ def run_drill(title: str, intro: str, content: str):
             # if user mistypes A, we only want to track it first time, do not penalize for missing same character twice
             if not pressed_wrong_key:
                 incorrect_pressed_keys.append(key)
+                if strict_mode and correct_pressed_keys:
+                    chars = len(correct_pressed_keys)
+                    wrong = len(incorrect_pressed_keys)
+                    if (chars - wrong) / chars * 100 < 97.0:
+                        with TERM.location():
+                            print(HOME + XY(0, HEIGHT), end="", flush=True)
+                            print(TERM.black_on_red(" Accuracy < 97% — restarting... "), end="", flush=True)
+                        time.sleep(1.0)
+                        return "repeat"
             # if they did not hit target, we want to set True
             pressed_wrong_key = True
 
