@@ -255,6 +255,7 @@ def print_lines(content_str: str) -> int:
     return left_padding
 
 def run_drill(title: str, intro: str, content: str):
+    global setting_show_stats, setting_strict_mode
     drill_started = False
     show_stats = setting_show_stats
     strict_mode = setting_strict_mode
