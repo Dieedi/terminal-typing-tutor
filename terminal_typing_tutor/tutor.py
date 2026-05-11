@@ -370,15 +370,13 @@ def run_drill(title: str, intro: str, content: str):
         else:
             # if user mistypes A, we only want to track it first time, do not penalize for missing same character twice
             if not pressed_wrong_key:
+                incorrect_pressed_keys.append(key)
                 if strict_mode and correct_pressed_keys:
                     chars = len(correct_pressed_keys)
                     wrong = len(incorrect_pressed_keys)
-                    # check with wrong+1 (this key not yet appended) so end_drill
-                    # receives the same accuracy that was shown in the live bar
-                    if (chars - (wrong + 1)) / chars * 100 < 97.0:
+                    if (chars - wrong) / chars * 100 < 97.0:
                         action = end_drill(start_time, test_string[:chars], incorrect_pressed_keys)
                         return action
-                incorrect_pressed_keys.append(key)
             # if they did not hit target, we want to set True
             pressed_wrong_key = True
 
