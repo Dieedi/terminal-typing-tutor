@@ -39,6 +39,10 @@ series: TSeries
 lesson: int
 segment = 0
 
+# session-wide drill settings (can be changed from the Settings menu or with F1/F2 during a drill)
+setting_show_stats: bool = True
+setting_strict_mode: bool = False
+
 """
 TODOS: 
 - track total time spent practicing typing
@@ -252,8 +256,8 @@ def print_lines(content_str: str) -> int:
 
 def run_drill(title: str, intro: str, content: str):
     drill_started = False
-    show_stats = True
-    strict_mode = False
+    show_stats = setting_show_stats
+    strict_mode = setting_strict_mode
     pressed_wrong_key = False
     start_time = 0.0
     test_string = content.rstrip()
@@ -317,11 +321,13 @@ def run_drill(title: str, intro: str, content: str):
 
         if key.name == "KEY_F1":
             show_stats = not show_stats
+            setting_show_stats = show_stats
             draw_bottom_bar()
             continue
 
         if key.name == "KEY_F2":
             strict_mode = not strict_mode
+            setting_strict_mode = strict_mode
             draw_bottom_bar()
             continue
 
@@ -453,12 +459,34 @@ def run_lesson_menu():
             words_mixed()
 
 
+def run_settings_menu():
+    global setting_show_stats, setting_strict_mode
+    while True:
+        menu = [
+            {"title": f"   {'[ON ]' if setting_show_stats else '[OFF]'}  Live stats bar (WPM / accuracy during drill)   "},
+            {"title": f"   {'[ON ]' if setting_strict_mode else '[OFF]'}  Strict mode — auto-restart when accuracy < 97%  "},
+        ]
+        selection = menu_selection("Settings", menu)
+        if selection == -1:
+            return
+        if selection == 0:
+            setting_show_stats = not setting_show_stats
+        elif selection == 1:
+            setting_strict_mode = not setting_strict_mode
+
+
 def run_series_menu():
     global series
-    selection = menu_selection(MAIN_MENU_TITLE, MAIN_MENU)
-    if selection == -1:
-        exit()
-    series = cast(TSeries ,MAIN_MENU[selection]["series"])
+    while True:
+        selection = menu_selection(MAIN_MENU_TITLE, MAIN_MENU)
+        if selection == -1:
+            exit()
+        item = MAIN_MENU[selection]
+        if item.get("settings"):
+            run_settings_menu()
+            continue
+        series = cast(TSeries, item["series"])
+        break
 
 
 def display_info_screen(banner_title: str, intro: str, content: str):

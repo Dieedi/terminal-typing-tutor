@@ -51,6 +51,10 @@ MAIN_MENU = [
     {
         "title": "Series F    Random word drills (10k words)   ",
         "series": "F",
+    },
+    {
+        "title": "Settings    Configure drill options           ",
+        "settings": True,
     }
 ]
 
